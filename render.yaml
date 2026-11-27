@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: payment-relay
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node --experimental-sqlite server.js
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: SHOP_CODE
+        value: SHOP-49J4-T352
+      - key: SHOP_UPI
+        value: 8327352996@fam
+      - key: RELAY_KEY
+        generateValue: true

@@ -1,0 +1,1 @@
+{"description":"Tiny free public relay: Android SMS Observer posts bank-credit detections here; the payment gateway polls for them.","engines":{"node":">=22.5"},"license":"MIT","main":"server.js","name":"payment-relay","scripts":{"start":"node --experimental-sqlite server.js"},"version":"1.0.0"}
